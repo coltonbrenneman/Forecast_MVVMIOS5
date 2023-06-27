@@ -23,12 +23,13 @@ class DayDetailViewModel {
     init(delegate: DayDetailViewDelegate, networkController: NetworkingContoller = NetworkingContoller()) {
         self.delegate = delegate
         self.networkingController = networkController
-        fetchForcastData()
+        fetchForcastData(for: "Salt Lake")
     }
     
     // MARK: - Functions
-    func fetchForcastData() {
-        NetworkingContoller.fetchDays { result in
+    func fetchForcastData(for city: String) {
+        let cityEndpoint = CityEndpoint.city(city)
+        NetworkingContoller.fetchDays(with: cityEndpoint) { result in
             switch result {
             case .success(let day):
                 self.forcastData = day

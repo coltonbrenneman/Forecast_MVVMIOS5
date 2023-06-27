@@ -18,6 +18,7 @@
 		41978F6F27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */; };
 		41978F7127B9CF46001CB2C0 /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41978F7027B9CF46001CB2C0 /* DayDetailsViewController.swift */; };
 		44B3AFE82A4B7DE9007F2D78 /* DayDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3AFE72A4B7DE9007F2D78 /* DayDetailViewModel.swift */; };
+		44CF9F152A4B8B12000A2B25 /* CityEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CF9F142A4B8B12000A2B25 /* CityEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		41978F6E27B9CF0A001CB2C0 /* DayForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForecastTableViewCell.swift; sourceTree = "<group>"; };
 		41978F7027B9CF46001CB2C0 /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
 		44B3AFE72A4B7DE9007F2D78 /* DayDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailViewModel.swift; sourceTree = "<group>"; };
+		44CF9F142A4B8B12000A2B25 /* CityEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 		41978F4127B9C26C001CB2C0 /* Forecast_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				41978F6527B9CDA8001CB2C0 /* Controller */,
+				41978F6527B9CDA8001CB2C0 /* Services */,
 				41978F6427B9CDA1001CB2C0 /* Model */,
 				41978F6727B9CDB5001CB2C0 /* View */,
 				44B3AFE62A4B7D9C007F2D78 /* Storyboards */,
@@ -94,13 +96,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		41978F6527B9CDA8001CB2C0 /* Controller */ = {
+		41978F6527B9CDA8001CB2C0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				41978F6A27B9CDF2001CB2C0 /* NetworkingController.swift */,
+				44CF9F142A4B8B12000A2B25 /* CityEndpoint.swift */,
 				41978F6C27B9CE70001CB2C0 /* ResultError.swift */,
 			);
-			path = Controller;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		41978F6727B9CDB5001CB2C0 /* View */ = {
@@ -201,6 +204,7 @@
 				41978F6927B9CDCC001CB2C0 /* Day.swift in Sources */,
 				41978F4527B9C26C001CB2C0 /* SceneDelegate.swift in Sources */,
 				41978F6B27B9CDF2001CB2C0 /* NetworkingController.swift in Sources */,
+				44CF9F152A4B8B12000A2B25 /* CityEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +390,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
