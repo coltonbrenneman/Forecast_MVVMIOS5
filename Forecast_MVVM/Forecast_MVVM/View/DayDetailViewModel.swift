@@ -23,7 +23,7 @@ class DayDetailViewModel {
     init(delegate: DayDetailViewDelegate, networkController: NetworkingContoller = NetworkingContoller()) {
         self.delegate = delegate
         self.networkingController = networkController
-        fetchForcastData(for: "Salt Lake")
+        fetchForcastData(for: "Saint George")
     }
     
     // MARK: - Functions
